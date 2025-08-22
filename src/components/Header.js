@@ -1,10 +1,19 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { toggleSideBar } from "../utils/sidebarSlice";
 
 const Header = () => {
+  const dispatch = useDispatch();
+  const handleToggle = () => {
+    dispatch(toggleSideBar());
+  };
   return (
-    <div className="grid grid-cols-[auto_1fr_auto] items-center gap-4 w-full mt-2">
+    <div className="grid grid-cols-[auto_1fr_auto] items-center gap-4 w-full mt-2 p-2">
       <div className="div flex gap-4 ml-2">
-        <i className="bi bi-list text-3xl"></i>
+        <i
+          onClick={() => handleToggle()}
+          className="bi bi-list text-3xl cursor-pointer"
+        ></i>
         <div id="mytube-logo" className="flex items-center">
           <i className="bi bi-youtube text-4xl"></i>
           <h3 className="">YouTube</h3>
