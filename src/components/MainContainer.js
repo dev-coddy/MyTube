@@ -3,7 +3,7 @@ import VedioContainer from "./VedioContainer";
 
 const MainContainer = () => {
   return (
-    <div>
+    <div className="w-[85%]">
       <ButtonList />
       <VedioContainer />
     </div>

@@ -1,13 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
   return (
-    <div className="w-60 h-screen overflow-y-auto p-2 text-sm">
+    <div className="w-[15%] h-screen overflow-y-auto p-2 text-sm">
       <div className="flex flex-col gap-1">
-        <button className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-100 bg-gray-100 font-medium">
-          <i className="bi bi-house-door-fill text-xl"></i>
-          <span>Home</span>
-        </button>
+        <Link
+          className="text-inherit no-underline  rounded-lg hover:bg-gray-100 bg-gray-100 font-medium"
+          to={"/"}
+        >
+          <button className="flex items-center gap-3 p-2">
+            <i className="bi bi-house-door-fill text-xl"></i>
+            <span>Home</span>
+          </button>
+        </Link>
         <button className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-100">
           <i className="bi bi-collection-play text-xl"></i>
           <span>Shorts</span>

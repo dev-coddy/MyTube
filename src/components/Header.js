@@ -26,7 +26,7 @@ const Header = () => {
             <i className="bi bi-search  ml-3 text-xl"></i>
           </button>
         </div>
-        <button className="bg-gray-100 rounded-full p-2">
+        <button className="bg-gray-100 w-10 h-10 flex items-center justify-center  rounded-full p-2">
           <i className="bi bi-mic-fill text-xl"></i>
         </button>
       </div>
